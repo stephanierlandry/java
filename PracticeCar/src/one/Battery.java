@@ -2,13 +2,14 @@ package one;
 
 public class Battery extends CarPart {
 
-	String batteryType;
+	int batteryType;
 	
-	public Battery (String batteryType) {
+	public Battery (int batteryType) {
 		this.batteryType = batteryType;
 	}
 	
-	public void function(String batteryType) {
+	@Override
+	public void function(int batteryType) {
 		System.out.println("I need a " + batteryType + " to start the car.");
 	}
 }

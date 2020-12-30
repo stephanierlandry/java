@@ -6,8 +6,8 @@ import java.util.ArrayList;
 public class Car {
 	
 	Wheels wheels = new Wheels(31);
-	Engine engine = new Engine(31, "synthetic");
-	Battery battery = new Battery("AA");
+	Engine engine = new Engine(21);
+	Battery battery = new Battery(11);
 	
 	public ArrayList<CarPart> carPartsArr = new ArrayList<>();
 	
@@ -19,7 +19,7 @@ public class Car {
 	
 	public void run() {	    
 		for (int i = 0; i < carPartsArr.size(); i++) {	
-			carPartsArr.get(i).function();
+			carPartsArr.get(i).function(31);	
 		}
 	}
 	
