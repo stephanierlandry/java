@@ -4,13 +4,16 @@ public class Wheels extends CarPart {
 	
 	int psi;
 	
-	public Wheels (int psi) {
-		this.psi = psi;
+	public Wheels () {
+		super(3, "wheel");
+		this.psi = 11;
 	}
 		
-	@Override
 	public void function(int psi) {
-		System.out.println("My function is to move the car if my " + psi + " is correct");
+		System.out.println("My function is to move the car if my " + this.psi + " is correct");
+		status(this.condition, this.partName);
 	}
+	
+	
 
 }

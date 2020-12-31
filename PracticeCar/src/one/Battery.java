@@ -4,12 +4,13 @@ public class Battery extends CarPart {
 
 	int batteryType;
 	
-	public Battery (int batteryType) {
-		this.batteryType = batteryType;
+	public Battery () {
+		super(80, "battery");
+		this.batteryType = 12;
 	}
 	
-	@Override
 	public void function(int batteryType) {
-		System.out.println("I need a " + batteryType + " to start the car.");
+		System.out.println("I need a " + this.batteryType + " to start the car.");
+		status(this.condition, this.partName);
 	}
 }
