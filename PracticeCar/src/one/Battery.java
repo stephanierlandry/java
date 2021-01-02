@@ -10,7 +10,7 @@ public class Battery extends CarPart {
 	}
 	
 	public void function(int batteryType) {
-		System.out.println("I need a " + this.batteryType + " to start the car.");
 		status(this.condition, this.partName);
+		System.out.println("I need a " + this.batteryType + " volt battery to start the car.");
 	}
 }

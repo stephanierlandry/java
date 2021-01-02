@@ -6,11 +6,11 @@ public class Wheels extends CarPart {
 	
 	public Wheels () {
 		super(3, "wheel");
-		this.psi = 11;
+		this.psi = 44;
 	}
 		
 	public void function(int psi) {
-		System.out.println("My function is to move the car if my " + this.psi + " is correct");
+		System.out.println("My function is to move the car if my psi (" + this.psi + ") is correct");
 		status(this.condition, this.partName);
 	}
 	
