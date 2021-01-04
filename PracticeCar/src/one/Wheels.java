@@ -10,10 +10,7 @@ public class Wheels extends CarPart {
 	}
 		
 	public void function(int psi) {
-		System.out.println("My function is to move the car if my psi (" + this.psi + ") is correct");
 		status(this.condition, this.partName);
+		System.out.println("My function is to move the car if my psi (" + this.psi + ") is correct");
 	}
-	
-	
-
 }
